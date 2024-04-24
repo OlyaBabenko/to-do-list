@@ -1,0 +1,10 @@
+@use '/src/assets/styles/base';
+
+body {
+   font-family: base.$font-family;
+   background: base.$color-primary-50;
+   margin: 0;
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+}
