@@ -1,0 +1,33 @@
+@use '/src/assets/styles/base';
+
+.appWrapper {
+   width: 100%;
+   padding: 1rem;
+   box-sizing: border-box;
+   overflow: hidden;
+
+   .title {
+   color: base.$color-primary-500;
+}
+.nav {
+   display: flex;
+   justify-content: center;
+   gap: 4px;
+   flex-wrap: wrap;
+
+   a {
+      font-size: 0.875rem;
+      width: 100px;
+      padding: 5px 0;
+      border: 1px solid base.$color-primary-500;
+      border-radius: 6px;
+      text-decoration: none;
+      color: base.$color-primary-950;
+   }
+
+   .active {
+      background-color: base.$color-primary-200;
+   }
+}
+
+}

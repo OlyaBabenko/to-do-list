@@ -1,0 +1,49 @@
+@use '/src/assets/styles/base';
+
+.wrapperInput {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4px;
+   width: 100%;
+
+   input {
+      padding: 6px;
+      border: 1px solid base.$color-primary-200;
+      border-radius: 4px;
+      flex: 2;
+      font-family: base.$font-family;
+
+      &:focus-visible {
+         outline: none;
+      }
+
+      &:hover,
+      &:focus {
+         border-color: base.$color-primary;
+      }
+
+      &:active {
+         border-color: base.$color-primary-300;
+      }
+   }
+
+   button {
+      width: 80px;
+      padding: 5px 10px;
+      border: none;
+      background-color: base.$color-primary-200;
+      border-radius: 4px;
+      color: base.$color-primary-800;
+      font-family: base.$font-family;
+      cursor: pointer;
+
+      &:hover {
+        background-color: base.$color-primary;
+        color: white;
+      }
+      &:active {
+        background-color: base.$color-primary-500;
+        color: white;
+      }
+   }
+}
